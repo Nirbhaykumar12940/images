@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gallery image</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">download</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">contact</a></li>
+        </ul>
+    </nav>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            margin: 0;
+            background-color: rgb(93, 21, 21);
+            
+
+        }
+        nav{
+            background-color: black;
+            width: 100%;
+            overflow: auto;
+
+
+        }
+        ul{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+
+        }
+        li{
+            float: left;
+
+        }
+        nav a{
+            width: 120px;
+            display: block;
+            text-decoration: none;
+            text-align: center;
+            background-color: rgb(16, 16, 16);
+            font-size: 20px;
+            color: rgb(215, 200, 200);
+            padding: 20px 10px;
+            font-size: Arial;
+        }
+        nav a:hover{
+            background-color: rgb(17, 82, 11);
+            color: rgb(244, 232, 232);
+            font-weight: bolder;
+
+        }
+        div{
+           display: flex; 
+           justify-content: center;
+           align-items:center ;
+           flex-wrap: wrap;
+        }
+        div img{
+            width: 400px;
+            height: 300px;
+            border: 2px solid gray;
+            border: radius 13px; 
+            box-shadow: 4px 7px 7px 0px #00000042;
+            cursor: pointer;
+            margin: 10px;
+            transition: 400ms;
+
+        }
+        div img:hover{
+            filter: grayscale(1);
+            transform: scale(1.03);
+        }
+    </style>
+    <div class="img-gallery">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDo890dsxpB5UCLQFdVBWmK4qVxTrsrLEEUg&s" >
+        
+        
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS75ebrwvgVW5Ks_oLfCbG8Httf3_9g-Ynl_Q&s" >
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS92eisuWOx3tEjeW14mT9ACVgXDwIRBGtnww&s" >
+        
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRN9Qod2JH67jv7w0TUNqNA5OJVLkpi3mw6rw&s">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTA2oASENe7GdCli1KnAl6cnDnuD6lGT60txQ&s" >
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQP4SPm_7JYOz4firDmPHDZGrUxVqcumPWtdQ&s" >
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROYjj94a1EKPObxDQCbqSdwmIbkhQt5Np5lQ&s" >
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiI76D9VIJtd-mUicPtv07vgr1ZcKobACqyg&s" >
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQ1ipeQbFseUM_GzxwMoQj45w9HtAnu4eu5w&s" >
+    
+    </div>
+    
+    <script src="script.js"></script>  
+</body>
+</html>
